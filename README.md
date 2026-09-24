@@ -21,14 +21,6 @@ The public site layout is inspired by the information architecture of modern Ayu
 
 ## Setup
 
-### 1. Create MySQL database
-
-```sql
-CREATE DATABASE arogya_veda CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'arogya_user'@'localhost' IDENTIFIED BY 'YOUR_PASSWORD';
-GRANT ALL PRIVILEGES ON arogya_veda.* TO 'arogya_user'@'localhost';
-FLUSH PRIVILEGES;
-```
 
 ### 2. Configure server
 
@@ -93,29 +85,7 @@ Change the password before production use.
 
 Admin product management supports JPEG, PNG, WEBP and AVIF uploads. Images are optimized to WebP and stored under:
 
-```text
-server/uploads/products/
-```
 
-## Main API
-
-- `POST /api/auth/register`
-- `POST /api/auth/login`
-- `GET /api/auth/me`
-- `GET /api/products`
-- `GET /api/products/:id`
-- `POST /api/products`
-- `PUT /api/products/:id`
-- `DELETE /api/products/:id`
-- `GET /api/categories`
-- `GET /api/blog`
-- `POST /api/orders`
-- `GET /api/orders`
-- `POST /api/reviews`
-- `POST /api/contact`
-- `POST /api/newsletter/subscribe`
-- `GET /api/settings`
-- `GET /api/admin/dashboard`
 
 ## Production
 
